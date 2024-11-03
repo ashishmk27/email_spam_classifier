@@ -43,3 +43,18 @@ The project utilizes a subset of a spam email dataset containing 20,000 rows. Th
 To use the spam classifier, follow these steps:
 
 1. Install the required libraries:
+pip install numpy pandas scikit-learn xgboost joblib
+
+2. Load the saved model:
+from joblib import load model = load('spam_classifier.joblib')
+3. Vectorize the new email using the same TF-IDF vectorizer used during training:
+from sklearn.feature_extraction.text import TfidfVectorizer vectorizer = load('tfidf_vectorizer.joblib')
+ # Load the vectorizer as well, you have saved it in a file
+ new_email_vectorized = vectorizer.transform([new_email])
+ 4. Predict the label for the new email:
+ prediction = model.predict(new_email_vectorized) if prediction[0] == 0: print('Not Spam') else: print('Spam')
+
+
+ ## Conclusion
+
+This project demonstrates the effectiveness of machine learning in spam email classification. By leveraging different algorithms and evaluating their performance, we can build a robust system for identifying and filtering spam emails. Future improvements could involve exploring more advanced techniques and incorporating larger datasets for enhanced accuracy.
