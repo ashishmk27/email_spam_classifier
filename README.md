@@ -49,7 +49,7 @@ pip install numpy pandas scikit-learn xgboost joblib
 from joblib import load model = load('spam_classifier.joblib')
 3. Vectorize the new email using the same TF-IDF vectorizer used during training:
 from sklearn.feature_extraction.text import TfidfVectorizer vectorizer = load('tfidf_vectorizer.joblib')
- # Load the vectorizer as well, you have saved it in a file
+ Load the vectorizer as well, you have saved it in a file
  new_email_vectorized = vectorizer.transform([new_email])
  4. Predict the label for the new email:
  prediction = model.predict(new_email_vectorized) if prediction[0] == 0: print('Not Spam') else: print('Spam')
