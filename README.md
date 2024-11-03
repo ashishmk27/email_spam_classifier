@@ -38,21 +38,93 @@ The project utilizes a subset of a spam email dataset containing 20,000 rows. Th
 | Gradient Boosting| 0.97825  | 0.96796  | 0.98953 | 0.97863 |
 
 
+# Spam Classifier
+
+This repository contains a machine learning-based spam classifier that categorizes emails as **Spam** or **Not Spam**. The model is trained using natural language processing techniques with a TF-IDF vectorizer.
+
+## Requirements
+
+To use the spam classifier, install the required libraries:
+
+```bash
+pip install numpy pandas scikit-learn xgboost joblib
+```
+
 ## Usage
 
-To use the spam classifier, follow these steps:
+Follow the steps below to classify new emails.
 
-1. Install the required libraries:
-pip install numpy pandas scikit-learn xgboost joblib
+### Step 1: Load the Pre-trained Model
 
-2. Load the saved model:
-from joblib import load model = load('spam_classifier.joblib')
-3. Vectorize the new email using the same TF-IDF vectorizer used during training:
-python from sklearn.feature_extraction.text import TfidfVectorizer vectorizer = load('tfidf_vectorizer.joblib')
- Load the vectorizer as well, you have saved it in a file
- new_email_vectorized = vectorizer.transform([new_email])
- 4. Predict the label for the new email:
- prediction = model.predict(new_email_vectorized) if prediction[0] == 0: print('Not Spam') else: print('Spam')
+Load the saved spam classifier model from the `spam_classifier.joblib` file:
+
+```python
+from joblib import load
+
+# Load the saved model
+model = load('spam_classifier.joblib')
+```
+
+### Step 2: Load the TF-IDF Vectorizer
+
+Since the model was trained with a TF-IDF vectorizer, you’ll need to load the saved vectorizer as well:
+
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# Load the saved TF-IDF vectorizer
+vectorizer = load('tfidf_vectorizer.joblib')
+```
+
+### Step 3: Vectorize the New Email
+
+Prepare and transform the new email text using the loaded vectorizer:
+
+```python
+# Example email
+new_email = "Congratulations! You've won a free prize. Click here to claim now!"
+
+# Transform the email text to match the vectorizer format
+new_email_vectorized = vectorizer.transform([new_email])
+```
+
+### Step 4: Predict the Email Label
+
+Use the model to predict if the email is **Spam** or **Not Spam**:
+
+```python
+# Make a prediction
+prediction = model.predict(new_email_vectorized)
+
+# Print the result
+if prediction[0] == 0:
+    print("Not Spam")
+else:
+    print("Spam")
+```
+
+### Example Output
+
+For the above example, the output might be:
+
+```
+Spam
+```
+
+## Repository Files
+
+- `spam_classifier.joblib`: The pre-trained spam classifier model.
+- `tfidf_vectorizer.joblib`: TF-IDF vectorizer used to process the email text.
+- `README.md`: Instructions for using the spam classifier.
+
+## Notes
+
+- Ensure that both `spam_classifier.joblib` and `tfidf_vectorizer.joblib` files are located in the same directory as your script.
+- The classifier may not generalize well to all types of emails, as it was trained on specific data.
+
+---
+
+This README file is now formatted and ready for GitHub, with clear headers, code blocks, and explanations. This format will be easy for users to read and follow.
 
 
  ## Conclusion
