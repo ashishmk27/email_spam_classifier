@@ -3,7 +3,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8+-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Project Overview
-This repository contains an *Email Spam Detection System* that classifies emails as *Spam* or *Not Spam (Ham)* using machine learning. The system is trained on the **Enron Spam Dataset**, processes emails through advanced text preprocessing, and deploys multiple models, including an ensemble approach for higher accuracy. A **Streamlit Web App** is also included for user-friendly email classification.
+This repository contains an *Email Spam Detection System* that classifies emails as *Spam* or *Not Spam (Ham)* using machine learning. The system is trained on the **Enron Spam Dataset**, processes emails through advanced text preprocessing, and deploys multiple models, including an ensemble approach for higher accuracy. A **Gradio Web App** is also included for user-friendly email classification.
 
 ## Key Features
 - *Dataset*: Uses the Enron spam dataset with ~33,110 emails (16,542 ham, 16,568 spam).
@@ -46,14 +46,6 @@ bash
 python evaluate_model.py
 
 
-### Run the Streamlit Web App
-To launch the web application for testing:
-bash
-streamlit run app.py
-
-
----
-
 ## Model Performance
 | Model          | Accuracy | F1 Score | Precision | Recall  |
 |---------------|----------|----------|----------|----------|
@@ -63,7 +55,6 @@ streamlit run app.py
 | LightGBM       | 96.13%   | 96.25%   | 93.43%   | 99.25%   |
 | *Ensemble*   | *98.92%* | *98.94%* | *98.75%* | *99.13%* |
 
----
 
 ## Example Test Emails
 Try these examples in the *Streamlit app*:
@@ -92,7 +83,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 For queries, email *ashishmahendran04@gmail.com* or create an issue in this repository.
-
 
 ⭐ *Star this repo if you find it useful!* 🌟
 
