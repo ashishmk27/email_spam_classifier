@@ -16,16 +16,15 @@ This repository contains an *Email Spam Detection System* that classifies emails
 
 ## Folder Structure
 
- email-spam-detection
- ┣ enron_spam_data.csv       # Raw dataset
- ┣ train_model.py            # Training script
- ┣ evaluate_model.py         # Model evaluation script
- ┣ app.py                    # Main Streamlit app script
- ┣ requirements.txt          # Dependencies list
- ┣ README.md                 # Project documentation
+email-spam-detection/
+┣ enron_spam_data.csv       # Raw dataset
+┣ train_model.py            # Training script
+┣ evaluate_model.py         # Model evaluation script
+┣ app.py                    # Main Streamlit app script
+┣ requirements.txt          # Dependencies list
+┣ README.md                 # Project documentation
 
 
----
 
 ## 📌 Installation Guide
 
