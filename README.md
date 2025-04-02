@@ -1,6 +1,6 @@
 # Email Spam Detection System
 
-![Streamlit](https://img.shields.io/badge/Streamlit-App-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8+-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.8+-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Project Overview
 This repository contains an *Email Spam Detection System* that classifies emails as *Spam* or *Not Spam (Ham)* using machine learning. The system is trained on the **Enron Spam Dataset**, processes emails through advanced text preprocessing, and deploys multiple models, including an ensemble approach for higher accuracy. A **Gradio Web App** is also included for user-friendly email classification.
