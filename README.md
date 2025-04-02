@@ -14,18 +14,6 @@ This repository contains an *Email Spam Detection System* that classifies emails
 - *Example Tests*: Provides sample spam and ham emails for user testing.
 
 
-## Folder Structure
-
-email-spam-detection/
-┣ enron_spam_data.csv       # Raw dataset
-┣ train_model.py            # Training script
-┣ evaluate_model.py         # Model evaluation script
-┣ app.py                    # Main Streamlit app script
-┣ requirements.txt          # Dependencies list
-┣ README.md                 # Project documentation
-
-
-
 ## 📌 Installation Guide
 
 ### 🔧 Prerequisites
