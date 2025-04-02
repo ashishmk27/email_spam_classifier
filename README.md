@@ -14,39 +14,39 @@ This repository contains an *Email Spam Detection System* that classifies emails
 - *Example Tests*: Provides sample spam and ham emails for user testing.
 
 
-## 📌 Installation Guide
+## Installation Guide
 
-### 🔧 Prerequisites
+### Prerequisites
 Ensure you have the following installed:
 - Python *3.8+*
 - Git (for cloning the repository)
 - At least *20GB RAM* (for training on dense arrays)
 
-### 🔽 Clone the Repository
+### Clone the Repository
 bash
 git clone https://github.com/yourusername/email-spam-detection.git
 cd email-spam-detection
 
 
-### 📦 Install Dependencies
+### Install Dependencies
 bash
 pip install -r requirements.txt
 
 
-### ⚙ Train the Model
+### Train the Model
 To train the models from scratch, run:
 bash
 python train_model.py
 
 This will train and save models in the models_improved/ folder.
 
-### 🏆 Evaluate the Model
+### Evaluate the Model
 After training, evaluate the models using:
 bash
 python evaluate_model.py
 
 
-### 🌐 Run the Streamlit Web App
+### Run the Streamlit Web App
 To launch the web application for testing:
 bash
 streamlit run app.py
@@ -54,7 +54,7 @@ streamlit run app.py
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 | Model          | Accuracy | F1 Score | Precision | Recall  |
 |---------------|----------|----------|----------|----------|
 | Naive Bayes    | 98.47%   | 98.48%   | 98.22%   | 98.73%   |
@@ -65,9 +65,9 @@ streamlit run app.py
 
 ---
 
-## 🎭 Example Test Emails
+## Example Test Emails
 Try these examples in the *Streamlit app*:
-#### ✅ Ham Email
+#### Ham Email
 
 Subject: Project Update Request
 Hi Team,
@@ -75,7 +75,7 @@ Can you please provide me with the latest project update? Let me know if you nee
 Best regards,
 John Doe
 
-#### 🚫 Spam Email
+#### Spam Email
 
 Subject: Congratulations! You Won $1,000,000!!!
 Dear User,
@@ -83,14 +83,14 @@ You have been selected for a huge cash prize! Click the link below to claim your
 http://spamlink.com
 
 
-## 🤝 Contributing
+## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
 > **Important**: PR sucks!!!.
 
-## 🛡 License
+## License
 This project is licensed under the MIT License.
 
-## 📧 Contact
+## Contact
 For queries, email *ashishmahendran04@gmail.com* or create an issue in this repository.
 
 
