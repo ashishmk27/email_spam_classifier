@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Project Overview
-This repository contains an *Email Spam Detection System* that classifies emails as *Spam* or *Not Spam (Ham)* using machine learning. The system is trained on the **Enron Spam Dataset**, processes emails through advanced text preprocessing, and deploys multiple models, including an ensemble approach for higher accuracy. A **Gradio Web App** is also included for user-friendly email classification.
+This repository contains an *Email Spam Detection System* that classifies emails as *Spam* or *Ham* using machine learning. The system is trained on the **Enron Spam Dataset**, processes emails through advanced text preprocessing, and deploys multiple models, including an ensemble approach for higher accuracy. A **Gradio Web App** is also included for user-friendly email classification.
 
 ## Key Features
 - *Dataset*: Uses the Enron spam dataset with ~33,110 emails (16,542 ham, 16,568 spam).
