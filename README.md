@@ -1,3 +1,9 @@
+---
+title: email-spam-detection
+app_file: app.py
+sdk: gradio
+sdk_version: 5.23.3
+---
 # Email Spam Detection System
 
 ![Python](https://img.shields.io/badge/Python-3.8+-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
