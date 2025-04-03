@@ -2,4 +2,4 @@ models_improved/
 enron_spam_data.csv
 env/
 venv/
-
+models/
