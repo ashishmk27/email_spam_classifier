@@ -29,28 +29,29 @@ Ensure you have the following installed:
 - At least *20GB RAM* (for training on dense arrays)
 
 ### Clone the Repository
-bash
+```
 git clone https://github.com/yourusername/email-spam-detection.git
 cd email-spam-detection
-
+```
 
 ### Install Dependencies
-bash
+```
 pip install -r requirements.txt
-
+```
 
 ### Train the Model
 To train the models from scratch, run:
-bash
+```
 python train_model.py
+```
 
 This will train and save models in the models_improved/ folder.
 
 ### Evaluate the Model
 After training, evaluate the models using:
-bash
+```
 python evaluate_model.py
-
+```
 
 ## Model Performance
 | Model          | Accuracy | F1 Score | Precision | Recall  |
@@ -64,6 +65,7 @@ python evaluate_model.py
 
 ## Example Test Emails
 Try these examples in the *Streamlit app*:
+
 #### Ham Email
 
 Subject: Project Update Request
