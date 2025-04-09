@@ -11,8 +11,7 @@ MODELS_DIR = r"/Users/sohan/Documents/GitHub/email_spam_classifier/models"
 try:
     vectorizer = joblib.load(os.path.join(MODELS_DIR, "vectorizer.joblib"))
     models = {
-        "Best Model": joblib.load(os.path.join(MODELS_DIR, "best_model.joblib")),
-        "Ensemble Model": joblib.load(os.path.join(MODELS_DIR, "ensemble_model.joblib")),
+         "Ensemble Model": joblib.load(os.path.join(MODELS_DIR, "ensemble_model.joblib")),
         "Random Forest": joblib.load(os.path.join(MODELS_DIR, "random_forest_model.joblib")),
         "LightGBM": joblib.load(os.path.join(MODELS_DIR, "lightgbm_model.joblib")),
         "XGBoost": joblib.load(os.path.join(MODELS_DIR, "xgboost_model.joblib")),
