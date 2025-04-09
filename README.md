@@ -69,6 +69,7 @@ Try these examples in the *Streamlit app*:
 #### Ham Email
 
 Subject: Project Update Request
+
 Hi Team,
 Can you please provide me with the latest project update? Let me know if you need any details from my end.
 Best regards,
@@ -77,6 +78,7 @@ John Doe
 #### Spam Email
 
 Subject: Congratulations! You Won $1,000,000!!!
+
 Dear User,
 You have been selected for a huge cash prize! Click the link below to claim your winnings NOW!
 http://spamlink.com
